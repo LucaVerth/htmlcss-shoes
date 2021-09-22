@@ -30,7 +30,7 @@ body{
 
 .header nav li{
   display: inline-block;
-  line-height: 70px;
+  line-height: 90px;
   margin-left: 20px;
 }
 
@@ -44,18 +44,22 @@ body{
   display: inline-block;
   text-decoration: none;
   font-size: 20px;
-  background-color: white;
+  background-color: #fff;
   color: black;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.5);
 }
 
 /* Hover function */
 .header nav li a:hover{
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+}
+.header nav li a:active{
+  background-color: #eee;
 }
 
 /* MAIN SITE */
 .box{
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   position: relative;
 }
@@ -72,20 +76,17 @@ body{
 
 /* items */
 .box .item{
-  width: 50vw;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
 }
 
-img{
+.item img{
   width: 100%;
 }
  
 .title{
-  text-size-adjust: auto;
   font-weight: bold;
   font-size: 3vw;
   color: yellow;
